@@ -33,8 +33,13 @@
     
     <!-- MULAI JQUERY -->
     <script>
-      var pubg = "Ini Script untuk PUBG";
-      var coc = "Ini Script untuk COC";
+      var pubg = '# Clash Of Clans - Mobile <br>'+
+                  'add action=add-dst-to-address-list address-list="List-IP-Games" address-list-timeout=1d chain=prerouting comment="Clash Of Clans - Mobile" dst-address-list=!LOCAL-IP dst-port=9330-9340 protocol=tcp <br>'+
+                  'add action=add-dst-to-address-list address-list="List-IP-Games" address-list-timeout=1d chain=prerouting dst-address-list=!LOCAL-IP dst-port=9330-9340 protocol=udp';
+      var coc = '# PUBG - Mobile<br>'+
+                'add action=add-dst-to-address-list address-list="List-IP-Games" address-list-timeout=1d chain=prerouting comment="PUBG - Mobile" dst-address-list=!LOCAL-IP dst-port=7889,10012,13004,14000,17000,17500,18081,20000-20002,20371 protocol=tcp'+
+                'add action=add-dst-to-address-list address-list="List-IP-Games" address-list-timeout=1d chain=prerouting dst-address-list=!LOCAL-IP dst-port=8011,9030,10491,10612,12235,13004,13748,17000,17500,20000-20002 protocol=udp<br>'+
+                'add action=add-dst-to-address-list address-list="List-IP-Games" address-list-timeout=1d chain=prerouting dst-address-list=!LOCAL-IP dst-port=7086-7995,10039,10096,11455,12070-12460,13894,13972,41182-41192 protocol=udp';
       $(document).ready(function(){
           $('input[type="checkbox"]').click(function(){
               //JIKA PUBG DICENTANG
